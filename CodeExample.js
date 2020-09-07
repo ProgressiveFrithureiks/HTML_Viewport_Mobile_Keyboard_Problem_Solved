@@ -6,9 +6,12 @@ var w,h,mvp;
 				mvp.setAttribute('content','width='+screen.width+',height='+screen.height);
 			}
 
-			window.addEventListener("resize", function() {
-				if(screen.width==w)
-					mvp.setAttribute('content','width='+w+',height='+h);
-				else
-					mvp.setAttribute('content','width='+h+',height='+w);
+			window.addEventListener("resize", function(){
+				setTimeout(() => {
+					if(screen.width==w)
+						mvp.setAttribute('content','width='+w+',height='+h);
+					else
+						mvp.setAttribute('content','width='+h+',height='+w);
+				},200);
+				
 			}, false);
