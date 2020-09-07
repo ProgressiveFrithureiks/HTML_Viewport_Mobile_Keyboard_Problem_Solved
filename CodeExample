@@ -1,3 +1,4 @@
+      <script>
       var w,h,mvp;
 			mvp = document.getElementById('myViewport');
 			window.onload = function () {
@@ -12,3 +13,4 @@
 				else
 					mvp.setAttribute('content','width='+h+',height='+w);
 			}, false);
+</script>
